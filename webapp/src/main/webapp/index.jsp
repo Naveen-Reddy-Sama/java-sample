@@ -1,19 +1,14 @@
-package com.mycompany.app;
+package in.javahome.myweb.controller;
 
-/**
- * Hello world!
- */
-public class App {
+import junit.framework.Assert;
+import junit.framework.TestCase;
 
-    private static final String MESSAGE = "Hello World!";
-
-    public App() {}
-
-    public static void main(String[] args) {
-        System.out.println(MESSAGE);
-    }
-
-    public String getMessage() {
-        return MESSAGE;
-    }
+public class CalculatorTest extends TestCase {
+	Calculator cal = new Calculator();
+	public void testAdd(){
+		Assert.assertEquals(cal.add(10, 20), 30);
+	}
+	public void testMultiply(){
+		Assert.assertEquals(cal.multiply(10, 20), 200);
+	}
 }
