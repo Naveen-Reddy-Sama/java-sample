@@ -1,3 +1,19 @@
+package com.mycompany.app;
 
-<h2 style="color:black;text-align:center"> Its time to start DevOps Project-1 !!!!</h2>
-<h3 style="color:blue;text-align:center">Thank You so much...!!!</h3>
+/**
+ * Hello world!
+ */
+public class App {
+
+    private static final String MESSAGE = "Hello World!";
+
+    public App() {}
+
+    public static void main(String[] args) {
+        System.out.println(MESSAGE);
+    }
+
+    public String getMessage() {
+        return MESSAGE;
+    }
+}
